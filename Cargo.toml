@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "primitives",
+    "proofs",
+    "demo"
+]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.dev]
+opt-level = 3
+lto = "thin"
